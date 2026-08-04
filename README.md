@@ -20,7 +20,6 @@ projeto/
 │   ├── adr/                    # Decisões de arquitetura (ADR)
 │   ├── diagrams/                # Diagramas UML e de arquitetura
 │   ├── api/                    # Documentação da API (endpoints, exemplos)
-│   ├── database/                # Modelagem e scripts do banco de dados
 │   └── requirements/             # Requisitos funcionais e não funcionais
 ├── pom.xml                     # Gerenciamento de dependências (Maven)
 └── README.md                   # Este arquivo
