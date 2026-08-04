@@ -1,9 +1,44 @@
-# Design de Software
+# Nome do Projeto
 
-Neste repositório, estará disponível as atividades relacionadas a matéria de Design de Software da instituição Senai Fatesg
+## Descrição
 
-# Estrutura-de-Dados
-repositório para postar as atividades e projetos da aula de estrutura de dados
+Breve descrição do projeto: o que ele faz, para quem é e qual problema resolve.
+
+## Tecnologias
+
+- Java
+- Spring Boot
+- PostgreSQL
+- Maven
+
+## Estrutura do projeto
+
+```
+projeto/
+├── src/                        # Código-fonte da aplicação
+├── docs/                       # Toda a documentação do projeto
+│   ├── adr/                    # Decisões de arquitetura (ADR)
+│   ├── diagrams/                # Diagramas UML e de arquitetura
+│   ├── api/                    # Documentação da API (endpoints, exemplos)
+│   ├── database/                # Modelagem e scripts do banco de dados
+│   └── requirements/             # Requisitos funcionais e não funcionais
+├── pom.xml                     # Gerenciamento de dependências (Maven)
+└── README.md                   # Este arquivo
+```
+
+Cada pasta dentro de `docs/` tem seu próprio `README.md` explicando o que deve ser guardado ali — veja a seção **Documentação** abaixo.
+
+## Como executar
+
+1. Clone o repositório: `git clone <url-do-repositorio>`
+2. Configure o banco de dados PostgreSQL (ver `docs/database/`)
+3. Ajuste as variáveis de ambiente / `application.properties`
+4. Rode com Maven: `mvn spring-boot:run`
+5. Acesse em `http://localhost:8080`
+
+## Documentação
+
+Toda a documentação do projeto está organizada dentro da pasta [`docs/`](docs/README.md), separada por assunto (arquitetura, diagramas, API, banco de dados e requisitos).
 
 ## Colaboradores
 
