@@ -7,8 +7,6 @@ Breve descrição do projeto: o que ele faz, para quem é e qual problema resolv
 ## Tecnologias
 
 - Java
-- Spring Boot
-- PostgreSQL
 - Maven
 
 ## Estrutura do projeto
@@ -30,10 +28,7 @@ Cada pasta dentro de `docs/` tem seu próprio `README.md` explicando o que deve 
 ## Como executar
 
 1. Clone o repositório: `git clone <url-do-repositorio>`
-2. Configure o banco de dados PostgreSQL (ver `docs/database/`)
 3. Ajuste as variáveis de ambiente / `application.properties`
-4. Rode com Maven: `mvn spring-boot:run`
-5. Acesse em `http://localhost:8080`
 
 ## Documentação
 
