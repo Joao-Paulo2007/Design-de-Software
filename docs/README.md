@@ -7,7 +7,7 @@ Esta pasta reúne toda a documentação técnica do projeto. O objetivo é mante
 | Pasta | Serve para |
 |---|---|
 | [`adr/`](adr/README.md) | Registrar as decisões de arquitetura tomadas e o porquê delas |
-| [`diagrams/`](diagrams/README.md) | Guardar diagramas visuais do sistema (classes, sequência, arquitetura etc.) |
+| [`diagramas/`](diagramas/README.md) | Guardar diagramas visuais do sistema (classes, sequência, arquitetura etc.) |
 | [`api/`](api/README.md) | Documentar os endpoints da API e como usá-los |
 | [`requisitos/`](requisitos/README.md) | Registrar requisitos funcionais, não funcionais e regras de negócio |
 
