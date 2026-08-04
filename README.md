@@ -16,7 +16,7 @@ projeto/
 ├── src/                        # Código-fonte da aplicação
 ├── docs/                       # Toda a documentação do projeto
 │   ├── adr/                    # Decisões de arquitetura (ADR)
-│   ├── diagrams/               # Diagramas UML e de arquitetura
+│   ├── diagramas/              # Diagramas UML e de arquitetura
 │   ├── api/                    # Documentação da API (endpoints, exemplos)
 │   └── requisitos/             # Requisitos funcionais e não funcionais
 ├── pom.xml                     # Gerenciamento de dependências (Maven)
@@ -25,14 +25,20 @@ projeto/
 
 Cada pasta dentro de `docs/` tem seu próprio `README.md` explicando o que deve ser guardado ali — veja a seção **Documentação** abaixo.
 
+
+## Documentos
+
+- [Documentação Geral](docs/README.md)
+- [Diagramas](docs/diagramas/README.md)
+- [ADRs](docs/adr/README.md)
+- [Diagramas](docs/diagramas/README.md)
+- [Requisitos](docs/requisitos/README.md)
+
+
 ## Como executar
 
 1. Clone o repositório: `git clone <url-do-repositorio>`
 3. Ajuste as variáveis de ambiente / `application.properties`
-
-## Documentação
-
-Toda a documentação do projeto está organizada dentro da pasta [`docs/`](docs/README.md), separada por assunto (arquitetura, diagramas, API, banco de dados e requisitos).
 
 ## Colaboradores
 
