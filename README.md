@@ -26,7 +26,7 @@ projeto/
 Cada pasta dentro de `docs/` tem seu próprio `README.md` explicando o que deve ser guardado ali — veja a seção **Documentação** abaixo.
 
 
-## Documentos
+## Outros READMEs
 
 - [Documentação Geral](docs/README.md)
 - [Diagramas](docs/diagramas/README.md)
