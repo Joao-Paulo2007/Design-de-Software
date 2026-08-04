@@ -18,9 +18,9 @@ projeto/
 ├── src/                        # Código-fonte da aplicação
 ├── docs/                       # Toda a documentação do projeto
 │   ├── adr/                    # Decisões de arquitetura (ADR)
-│   ├── diagrams/                # Diagramas UML e de arquitetura
+│   ├── diagrams/               # Diagramas UML e de arquitetura
 │   ├── api/                    # Documentação da API (endpoints, exemplos)
-│   └── requirements/             # Requisitos funcionais e não funcionais
+│   └── requisitos/             # Requisitos funcionais e não funcionais
 ├── pom.xml                     # Gerenciamento de dependências (Maven)
 └── README.md                   # Este arquivo
 ```
