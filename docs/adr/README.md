@@ -16,9 +16,9 @@ Sempre que uma decisão tiver impacto relevante e de longo prazo no projeto, por
 Os arquivos seguem numeração sequencial, começando em `0001`:
 
 ```
-0001-usar-spring-boot.md
-0002-usar-postgresql.md
-0003-autenticacao-jwt.md
+ADR-0001.md
+ADR-0002.md
+ADR-0003.md
 ```
 
 ## Template de um ADR
