@@ -24,17 +24,36 @@ ADR-0003.md
 ## Template de um ADR
 
 ```md
-# 000X - Título da decisão
+# ADR-XXXX: [Título curto da decisão, no infinitivo ou substantivo — ex.: "Uso de mensageria assíncrona para notificações"]
+
+## Status
+[Proposto | Aceito | Substituído por ADR-XXXX | Descontinuado]
+
+*(Toda ADR nasce como "Proposto". Só muda para "Aceito" depois de discutida com a equipe.
+Nunca edite uma ADR aceita para mudar de ideia — crie uma nova ADR que a substitui,
+e marque a antiga como "Substituído por ADR-XXXX". Isso preserva o histórico de decisões.)*
 
 ## Contexto
-Qual situação ou problema levou a essa decisão precisar ser tomada?
-
-## Problema
-O que precisava ser resolvido? Quais eram as opções consideradas?
+[Qual é o problema ou situação que exige esta decisão? Que restrições técnicas,
+de prazo, de equipe ou de negócio estão em jogo? Escreva de forma neutra — ainda
+não é hora de defender a solução, só de descrever o cenário.]
 
 ## Decisão
-O que foi decidido?
+[O que foi decidido, em tom afirmativo e direto: "Vamos usar X para resolver Y."
+Evite deixar em aberto ou em condicional — a ADR registra uma escolha feita,
+não uma lista de opções.]
+
+## Alternativas Consideradas
+*(Opcional, mas recomendado)*
+[Quais outras opções foram avaliadas? Por que não foram escolhidas?]
 
 ## Consequências
-Quais os efeitos positivos e negativos dessa decisão? O que fica mais fácil ou mais difícil a partir dela?
+[O que essa decisão implica — tanto vantagens quanto desvantagens aceitas.
+O que fica mais fácil? O que fica mais difícil, mais caro, ou é uma troca
+consciente que a equipe decidiu aceitar?]
+
+---
+*Autor(es): [nome]*
+*Data: [DD/MM/AAAA]*
+
 ```
