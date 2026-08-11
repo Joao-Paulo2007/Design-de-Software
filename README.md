@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Breve descrição do projeto: o que ele faz, para quem é e qual problema resolve.
+
 
 ## Tecnologias
 
@@ -15,10 +15,9 @@ Breve descrição do projeto: o que ele faz, para quem é e qual problema resolv
 projeto/
 ├── src/                        # Código-fonte da aplicação
 ├── docs/                       # Toda a documentação do projeto
-│   ├── adr/                    # Decisões de arquitetura (ADR)
-│   ├── diagramas/              # Diagramas UML e de arquitetura
-│   ├── api/                    # Documentação da API (endpoints, exemplos)
-│   └── requisitos/             # Requisitos funcionais e não funcionais
+│   ├── Aula01                  # conteúdo passado durante a aula 01, que foi a base de uma ADR
+│   ├── Aula02                  # conteúdo da aula 02, que foi um exemplo prático de ARD
+│   └── requisitos.md           # Requisitos funcionais e não funcionais
 ├── pom.xml                     # Gerenciamento de dependências (Maven)
 └── README.md                   # Este arquivo
 ```
