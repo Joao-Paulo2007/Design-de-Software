@@ -1,43 +1,58 @@
-# Nome do Projeto
+# <Nome do Projeto>
 
-## Descrição
+> Repositório do projeto desenvolvido em sala, incluindo o código-fonte e a documentação técnica (ADRs, mapas de contexto e análises de código) produzida ao longo das aulas.
 
+## Sobre
 
+Este repositório reúne o que está sendo construído/estudado durante as aulas de desenvolvimento, junto com o registro das decisões de arquitetura tomadas em cada etapa. Cada decisão relevante — e o porquê dela — fica documentada como um ADR (*Architecture Decision Record*) dentro da pasta [`docs/`](docs/README.md).
 
-## Tecnologias
-
-- Java
-- Maven
-
-## Estrutura do projeto
+## Estrutura
 
 ```
-projeto/
-├── src/                        # Código-fonte da aplicação
-├── docs/                       # Toda a documentação do projeto
-│   ├── Aula01                  # conteúdo passado durante a aula 01, que foi a base de uma ADR
-│   ├── Aula02                  # conteúdo da aula 02, que foi um exemplo prático de ARD
-│   └── requisitos.md           # Requisitos funcionais e não funcionais
-├── pom.xml                     # Gerenciamento de dependências (Maven)
-└── README.md                   # Este arquivo
+.
+├── README.md
+└── docs/
+    ├── README.md
+    ├── requisitos.md
+    ├── Aula01/
+    │   ├── README.md
+    │   └── ADR-0001.md
+    ├── Aula02/
+    │   ├── README.md
+    │   ├── ADR-0002.md
+    │   └── mapa-contexto-0002.md
+    └── Aula03/
+        ├── README.md
+        ├── ADR-0003.md
+        └── codigoComentado.java
 ```
 
-Cada pasta dentro de `docs/` tem seu próprio `README.md` explicando o que deve ser guardado ali — veja a seção **Documentação** abaixo.
+| Pasta | Conteúdo |
+|---|---|
+| [`docs/`](docs/README.md) | Documentação técnica: ADRs, mapas de contexto, análises de código |
 
+> A pasta `docs/` é o ponto de entrada da documentação — comece por lá para entender as decisões tomadas e por quê.
 
-## Outros READMEs
+## Documentação por aula
 
-- [Documentação Geral](docs/README.md)
-- [Diagramas](docs/diagramas/README.md)
-- [ADRs](docs/adr/README.md)
-- [Diagramas](docs/diagramas/README.md)
-- [Requisitos](docs/requisitos/README.md)
+| Aula | Tema |
+|---|---|
+| [Aula 01](docs/Aula01/README.md) | Refatoração do código legado |
+| [Aula 02](docs/Aula02/README.md) | Aplicativo para reduzir filas da cantina |
+| [Aula 03](docs/Aula03/README.md) | Correção de problemas de estruturação (baixa coesão, acoplamento) |
 
+## Equipe
 
-## Como executar
+- João Paulo Marques Ferreira
+- Gilvan Pedro de Castro Melo Campos
+- Guilherme Scarcela Bueno
+- Sidney Emanuel Barbosa
+- Pedro da Mata Santos
+- Giovanna Alice
 
-1. Clone o repositório: `git clone <url-do-repositorio>`
-3. Ajuste as variáveis de ambiente / `application.properties`
+## Como contribuir
+
+Antes de tomar uma decisão de arquitetura significativa, registre-a como um novo ADR na pasta da aula correspondente, seguindo o padrão já usado em `docs/` (Status, Contexto, Decisão, Alternativas Consideradas, Consequências).
 
 ## Colaboradores
 
