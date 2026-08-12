@@ -1,4 +1,4 @@
-# <Nome do Projeto>
+# <Design de Software>
 
 > Repositório do projeto desenvolvido em sala, incluindo o código-fonte e a documentação técnica (ADRs, mapas de contexto e análises de código) produzida ao longo das aulas.
 
