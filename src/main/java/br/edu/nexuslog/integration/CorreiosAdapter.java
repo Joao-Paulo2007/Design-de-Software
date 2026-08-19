@@ -27,14 +27,12 @@ public class CorreiosAdapter implements CarrierGateway {
     }
 
     // Implementação do contrato da abstração; aqui aparece o comportamento específico.
-
     @Override
     public String createShipment(Shipment shipment) {
         return client.postar(shipment.id(), shipment.weightKg());
     }
 
     // Implementação do contrato da abstração; aqui aparece o comportamento específico.
-
     @Override
     public String track(String trackingCode) {
         return client.consultarObjeto(trackingCode);

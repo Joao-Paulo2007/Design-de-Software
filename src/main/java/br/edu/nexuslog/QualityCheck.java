@@ -10,19 +10,36 @@
  * 2) confirme que a fórmula de cálculo de frete está correta;
  * 3) relacione essa verificação simples ao papel de testes na evolução do sistema.
  */
+
 package br.edu.nexuslog;
 
+import br.edu.nexuslog.domain.FreightStatus;
 import br.edu.nexuslog.domain.Shipment;
 import br.edu.nexuslog.service.SimpleFreightService;
 
 public class QualityCheck {
+
     public static void main(String[] args) {
-        Shipment s = new Shipment("T1", "Teste", 10.0);
+
+        Shipment shipment = new Shipment(
+                "T1",
+                "Teste",
+                10.0
+        );
+
         SimpleFreightService freightService = new SimpleFreightService();
-        double economic = freightService.calculate(s, "ECONOMICO");
+
+        double economic = freightService.calculate(
+                shipment,
+                FreightStatus.ECONOMICO
+        );
+
         if (Math.abs(economic - 25.0) > 0.0001) {
-            throw new AssertionError("Cálculo econômico incorreto");
+            throw new AssertionError(
+                    "Cálculo econômico incorreto: " + economic
+            );
         }
+
         System.out.println("QualityCheck OK");
     }
 }

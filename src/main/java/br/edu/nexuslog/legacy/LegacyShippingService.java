@@ -14,14 +14,12 @@
 package br.edu.nexuslog.legacy;
 
 // Classe concreta: implementa uma responsabilidade específica dentro do desenho.
-
 public class LegacyShippingService {
     public double process(String customerName, String freightType, double weightKg, String carrier) {
         // Código propositalmente ruim para diagnóstico em sala.
         double price = 0.0;
 
         // PROBLEMA DIDÁTICO: cada nova modalidade força alteração desta classe (sinal de baixa extensibilidade).
-
         if ("ECONOMICO".equals(freightType)) {
             price = 10.0 + weightKg * 1.5;
         } else if ("EXPRESSO".equals(freightType)) {
@@ -31,7 +29,6 @@ public class LegacyShippingService {
         }
 
         // PROBLEMA DIDÁTICO: o núcleo conhece fornecedores concretos; isso gera acoplamento com integrações externas.
-
         if ("CORREIOS".equals(carrier)) {
             System.out.println("Chamando API Correios...");
         } else if ("RAPIDEX".equals(carrier)) {

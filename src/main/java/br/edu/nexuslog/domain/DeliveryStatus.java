@@ -16,5 +16,5 @@ package br.edu.nexuslog.domain;
 // Enum: restringe o conjunto de estados válidos e evita strings soltas para representar o ciclo de vida.
 
 public enum DeliveryStatus {
-    RECEBIDO, COLETADO, EM_TRANSITO, SAIU_PARA_ENTREGA, ENTREGUE
+    RECEBIDO, COLETADO, EM_TRANSITO, SAIU_PARA_ENTREGA, ENTREGUE;
 }
