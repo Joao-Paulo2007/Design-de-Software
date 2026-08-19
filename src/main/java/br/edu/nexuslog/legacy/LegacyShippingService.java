@@ -13,11 +13,18 @@
  */
 package br.edu.nexuslog.legacy;
 
+import br.edu.nexuslog.domain.Carrier;
+import br.edu.nexuslog.domain.FreightStatus;
+import br.edu.nexuslog.domain.Shipment;
+import br.edu.nexuslog.service.SimpleFreightService;
+
 // Classe concreta: implementa uma responsabilidade específica dentro do desenho.
 public class LegacyShippingService {
-    public double process(String customerName, String freightType, double weightKg, String carrier) {
+    SimpleFreightService simpleFreightService = new SimpleFreightService();
+
+    public double process(Shipment shipment, FreightStatus freightStatus, Carrier carrier) {
         // Código propositalmente ruim para diagnóstico em sala.
-        double price = 0.0;
+        double price = simpleFreightService.calculate(shipment, freightStatus);
 
         // PROBLEMA DIDÁTICO: cada nova modalidade força alteração desta classe (sinal de baixa extensibilidade).
         if ("ECONOMICO".equals(freightType)) {
