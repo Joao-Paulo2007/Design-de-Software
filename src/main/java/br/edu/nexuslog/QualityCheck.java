@@ -13,7 +13,7 @@
 
 package br.edu.nexuslog;
 
-import br.edu.nexuslog.domain.FreightStatus;
+import br.edu.nexuslog.domain.FreightType;
 import br.edu.nexuslog.domain.Shipment;
 import br.edu.nexuslog.service.SimpleFreightService;
 
@@ -31,7 +31,7 @@ public class QualityCheck {
 
         double economic = freightService.calculate(
                 shipment,
-                FreightStatus.ECONOMICO
+                FreightType.ECONOMICO
         );
 
         if (Math.abs(economic - 25.0) > 0.0001) {

@@ -15,7 +15,7 @@
 package br.edu.nexuslog.api;
 
 import br.edu.nexuslog.application.CreateShipmentUseCase;
-import br.edu.nexuslog.domain.FreightStatus;
+import br.edu.nexuslog.domain.FreightType;
 import br.edu.nexuslog.domain.Shipment;
 import br.edu.nexuslog.events.ShipmentEventPublisher;
 import br.edu.nexuslog.service.SimpleFreightService;
@@ -70,10 +70,10 @@ public class ShipmentController {
                 weightKg
         );
 
-        FreightStatus freightStatus;
+        FreightType freightStatus;
 
         try {
-            freightStatus = FreightStatus.valueOf(
+            freightStatus = FreightType.valueOf(
                     freightType.toUpperCase()
             );
         } catch (IllegalArgumentException e) {

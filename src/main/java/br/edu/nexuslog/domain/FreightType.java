@@ -1,6 +1,6 @@
 package br.edu.nexuslog.domain;
 
-public enum FreightStatus {
+public enum FreightType {
 
     ECONOMICO(10.0, 1.5),
     EXPRESSO(25.0, 3.0),
@@ -9,7 +9,7 @@ public enum FreightStatus {
     private final double fixPrice;
     private final double floatedPrice;
 
-    FreightStatus(double fixPrice, double floatedPrice) {
+    FreightType(double fixPrice, double floatedPrice) {
         this.fixPrice = fixPrice;
         this.floatedPrice = floatedPrice;
     }

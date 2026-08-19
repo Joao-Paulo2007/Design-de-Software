@@ -1,6 +1,6 @@
 package br.edu.nexuslog.domain;
 
 public enum Carrier {
-    CORREIO,
+    CORREIOS,
     RAPIDEX;
 }

@@ -13,14 +13,41 @@
  */
 package br.edu.nexuslog;
 
+import br.edu.nexuslog.domain.Carrier;
+import br.edu.nexuslog.domain.Shipment;
+import br.edu.nexuslog.integration.CarrierService;
+import br.edu.nexuslog.integration.external.CorreiosClient;
+import br.edu.nexuslog.integration.external.RapidexClient;
 import br.edu.nexuslog.legacy.LegacyShippingService;
+import br.edu.nexuslog.service.SimpleFreightService;
+
+import static br.edu.nexuslog.domain.FreightType.EXPRESSO;
+
 
 // Classe concreta: implementa uma responsabilidade específica dentro do desenho.
 
 public class App {
     public static void main(String[] args) {
-        LegacyShippingService service = new LegacyShippingService();
-        double price = service.process("Cliente Exemplo", "EXPRESSO", 8.5, "CORREIOS");
+        Shipment shipment = new Shipment(
+                "1",
+                "Cliente Exemplo",
+                8.5
+        );
+
+        LegacyShippingService service = new LegacyShippingService(
+                new SimpleFreightService(),
+                new CarrierService(
+                        new CorreiosClient(),
+                        new RapidexClient()
+                )
+        );
+
+        double price = service.process(
+                shipment,
+                EXPRESSO,
+                Carrier.CORREIOS
+        );
+
         System.out.println("Preço calculado: R$ " + price);
     }
 }
